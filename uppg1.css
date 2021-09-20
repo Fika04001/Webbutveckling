@@ -1,5 +1,13 @@
 body{
-    background-color: beige
+    background-color: beige;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 80px;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
 }
 p, h1, h2{
     color: black;
@@ -22,4 +30,16 @@ a{
 }
 .ommig{
     border-style: solid;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
 }
